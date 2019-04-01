@@ -16,7 +16,7 @@ Scenario('Publish article as new user @wip', (I) => {
     I.fillField("input[placeholder='Email']", faker.random.uuid() + faker.internet.email() )
     I.fillField("//input[@placeholder='Password']", faker.commerce.color())
 
-    let signUpButton = locate('form').find(".btn")
+    let signUpButton = locate('foo').find(".btn")
     I.click(signUpButton)
 
     let newPost = locate('a').withAttr( {href: '/editor'})

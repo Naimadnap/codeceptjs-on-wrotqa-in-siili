@@ -12,5 +12,15 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
-  name: 'codeceptjs-on-wrotqa-in-siili'
+  name: 'codeceptjs-on-wrotqa-in-siili',
+  
+plugins: {
+	allure: {
+		enabled: true
+	},
+    stepByStepReport: {
+      enabled: true,
+      screenshotsForAllureReport: true
+    }
+  }
 }
